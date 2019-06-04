@@ -57,6 +57,13 @@
     </dependencyManagement>
 
     <dependencies>
+        <!-- Necessary for JPA Console in Intellij !!!!!! -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.4.0.Final</version>
+            <scope>provided</scope>
+        </dependency>
 
         <!-- Import the CDI API, we use provided scope as the API is included in JBoss EAP -->
         <dependency>
